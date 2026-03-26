@@ -3,7 +3,8 @@ partial class Program
 {
     static void Main(string[] args)
     {
-        ShowStringType();
+        //ShowStringType();
+        SalaryCalculator();
     }
 }
 
