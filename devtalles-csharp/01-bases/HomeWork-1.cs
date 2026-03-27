@@ -3,15 +3,15 @@ partial class Program
     static void SalaryCalculator()
     {
         Console.Write("Insert your name: ");
-        string name = Console.ReadLine();
+        string? name = Console.ReadLine(); // ? es que permite valores nulos
         
-        Console.Write("How many hours do you work?: ");
-        int hoursWorked = Convert.ToInt32(Console.ReadLine());
+        Console.Write("How many hours do you worked?: ");
+        double hoursWorked = double.Parse(Console.ReadLine()!); // ! significa que permite valores nulos
         
         Console.Write("Insert the salary per hour: ");
-        int salaryHour = Convert.ToInt32(Console.ReadLine());
+        double salaryHour = double.Parse(Console.ReadLine()!);
         
-        int totalSalary = salaryHour * hoursWorked;
-        Console.WriteLine($"Your total salary {name} is: {totalSalary}");
+        double totalSalary = salaryHour * hoursWorked;
+        Console.WriteLine($"Your total salary {name} is: {totalSalary:C}");
     }
-}
+}// operaciones de decimales calcula mal --
