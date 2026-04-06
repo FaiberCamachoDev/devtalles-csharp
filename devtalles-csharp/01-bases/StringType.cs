@@ -17,5 +17,6 @@ partial class Program
         Console.WriteLine(number.ToString().GetType());
         bool isString = true;
         Console.WriteLine(isString.ToString().GetType());
+        
     }
 }
