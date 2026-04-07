@@ -5,7 +5,7 @@ partial class Program
 {
     static void Main(string[] args)
     {
-        ListDictionarys();
+        Generics();
         Console.Write("Insert your name: ");
         string? name = Console.ReadLine();
         bool exit = false;
