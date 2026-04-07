@@ -5,7 +5,7 @@ partial class Program
 {
     static void Main(string[] args)
     {
-        
+        InventoryManager();
         Console.Write("Insert your name: ");
         string? name = Console.ReadLine();
         bool exit = false;
@@ -76,20 +76,24 @@ Seleccione un nivel para iniciar: ");
         Console.ReadKey();
     }
 
-    static int IntValidator(int number)
+    static int IntValidator()
     {
-        
-        
-        string? input = Console.ReadLine();
-        bool isValid= int.TryParse(input, out number);
-        
-        if (!isValid || number < 0)
+        bool isValid;
+        int number;
+        do
         {
-            Console.WriteLine("Invalid type of number, insert a valid format.");
-            PressEnterTo();
-        }
+            string? input = Console.ReadLine();
+            isValid= int.TryParse(input, out number);
+        
+            if (!isValid || number < 0)
+            {
+                Console.WriteLine("Invalid type of number, insert a valid format.");
+                PressEnterTo();
+            }
+        } while (!isValid);
+        
         return number;
+
     }
-     
 }
 
