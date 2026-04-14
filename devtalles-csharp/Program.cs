@@ -6,7 +6,9 @@
        // ConvertStringToDate();
        //PrintFactorial(5);
        // tuples();
-       AnonymousFunctions();
+       // AnonymousFunctions();
+       // TestingClass();
+       Properties();
     }
 }
 
