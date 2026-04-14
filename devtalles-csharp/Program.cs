@@ -4,7 +4,9 @@
     {
         // HomeWork3();
        // ConvertStringToDate();
-       PrintFactorial(5);
+       //PrintFactorial(5);
+       // tuples();
+       AnonymousFunctions();
     }
 }
 
