@@ -1,7 +1,7 @@
 // clases - struct - records
 
 partial class Program
-{
+{                           
     static void DataStructure()
     {
         //para poder usar la clase se debe instanciar (o sea hacer el proceso de crearlo con new etc etc.)

@@ -18,7 +18,7 @@ partial class Program
         Console.WriteLine(numbersArray[^1]);
         
         //rangos para obtener subarreglos
-        int[] firstThree = numbersArray[..3];
+        int[] firstThree = numbersArray[..3]; // primeros tres
         int[] fromIndexTwo = numbersArray[2..];
         Console.WriteLine(firstThree);
         Console.WriteLine(fromIndexTwo); //desde el indice dos en adelante
