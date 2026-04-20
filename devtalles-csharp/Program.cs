@@ -8,7 +8,8 @@
        // tuples();
        // AnonymousFunctions();
        // TestingClass();
-       Properties();
+       //Properties();
+       Methods();
     }
 }
 
