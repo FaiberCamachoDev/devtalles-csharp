@@ -2,13 +2,21 @@ partial class Program
 {
     static void Methods()
     {
-        Car newCar = new Car();
-        newCar.Model = "BMW";
-        newCar.Year = 1997;
-        WriteLine(newCar.ShowInfo());
-        newCar.ChangeModel("Audy");
-        WriteLine(newCar.ShowInfo());
-        Car.GeneralInfo();
+         Car car = new Car();
+            car.Model = "BMW";
+            car.Year = 1997;
+        WriteLine(car.ShowInfo());
+        // newCar.ChangeModel("Audy");
+        // WriteLine(newCar.ShowInfo());
+        // Car.GeneralInfo();
+        
+        // un constructor
+        Car sportCar = new Car("Ferrari", 2026);
+        WriteLine(sportCar.ShowInfo());
+        
+        // sintaxis simplificada
+        Car collectionCar = new Car { Model = "cadillac", Year = 2021 };
+        WriteLine(collectionCar.ShowInfo());
     }
 }
 
@@ -16,7 +24,17 @@ class Car
 {
    public string? Model { get; set; }
    public int? Year { get; set; }
-   
+
+   public Car(string? model, int? year) //constructor
+   {
+       Model = model;
+       Year = year;
+   }
+
+   public Car()
+   {
+   }
+
    //metodo para cambiar el modelo
    public void ChangeModel(string newModel) // insert new model
    {
