@@ -2,6 +2,7 @@ partial class Program
 {
     static void Methods()
     {
+        // constructor default
          Car car = new Car();
             car.Model = "BMW";
             car.Year = 1997;
@@ -10,7 +11,7 @@ partial class Program
         // WriteLine(newCar.ShowInfo());
         // Car.GeneralInfo();
         
-        // un constructor
+        // un constructor con parametros
         Car sportCar = new Car("Ferrari", 2026);
         WriteLine(sportCar.ShowInfo());
         
@@ -25,14 +26,20 @@ class Car
    public string? Model { get; set; }
    public int? Year { get; set; }
 
-   public Car(string? model, int? year) //constructor
+   public Car(string? model, int? year) //constructor con parametros
    {
        Model = model;
        Year = year;
    }
 
-   public Car()
+   public Car() //constructor por defecto
    {
+   }
+   
+   //destructor (~)
+   ~Car()
+   {
+       WriteLine("Destructor llamada. Recurso liberado");
    }
 
    //metodo para cambiar el modelo

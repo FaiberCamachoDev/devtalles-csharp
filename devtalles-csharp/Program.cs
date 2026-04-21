@@ -9,7 +9,8 @@
        // AnonymousFunctions();
        // TestingClass();
        //Properties();
-       Methods();
+       //Methods();
+       Inheritante();
     }
 }
 
