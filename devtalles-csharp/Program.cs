@@ -10,7 +10,8 @@
        // TestingClass();
        //Properties();
        //Methods();
-       Inheritante();
+       //Inheritante();
+       ShowEmpoyeesInformation();
     }
 }
 

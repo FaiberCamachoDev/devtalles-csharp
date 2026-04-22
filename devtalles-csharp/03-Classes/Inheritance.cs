@@ -12,6 +12,8 @@ partial class Program
     
     
 }
+
+
 class Character
 {
     public string? Name { get; set; }
@@ -21,10 +23,15 @@ class Character
         WriteLine($"Hi, im {Name}");
     }
 }
+//polimorfismo de metodos - greet
 class HogwarStudent : Character // Hogwarts hereda de character
 {
     public string? House { get; set; }
 
+    public override void Greet()
+    {
+        WriteLine($"Hi, im {Name} and im student at..."); // character trae greet (virtual permite sobreescribir) y override para cambiarlo en otra parte.
+    }
     public void ShowHouse()
     {
         WriteLine($"Im in the house {House} of Hogwarts");
@@ -34,6 +41,10 @@ class HogwarStudent : Character // Hogwarts hereda de character
 class HogwarTeacher : Character // Hogwarts hereda de character
 {
     public string? Subject { get; set; }
+    public override void Greet()
+    {
+        WriteLine($"Hi, im {Name} and im teacher at..."); // character trae greet (virtual permite sobreescribir) y override para cambiarlo en otra parte.
+    }
 
     public void ShowSubject()
     {
