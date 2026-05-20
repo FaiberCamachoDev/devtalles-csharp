@@ -7,6 +7,7 @@ Practice repository for the DevTalles C# course. Each module groups exercises an
 - **.NET 9.0**
 - **C# 13**
 - **System.Text.Json** (JSON serialization, included in the SDK)
+- **BetterConsoleTables** (Unicode table rendering in the console)
 - **Rider** as the primary IDE
 
 ## Project Structure
@@ -18,6 +19,7 @@ devtalles-csharp/
 ├── 03-Classes/        # Object-oriented programming
 ├── 04-Linq/           # Collections and LINQ
 ├── 05-Files/          # File handling and JSON
+├── 06-TaskMaster/     # Task manager — CRUD, JSON persistence, console tables
 ├── Program.cs         # Entry point — uncomment the method to run
 └── devtalles-csharp.csproj
 ```
@@ -94,6 +96,20 @@ File system handling and JSON serialization.
 | `DirectoryExample.cs` | Creating and deleting directories with `Directory` |
 | `PathExample.cs` | Path utilities: file name, extension, directory, combine and full path |
 | `ManageJsonFile.cs` | JSON serialization and deserialization with `System.Text.Json`: save, read, add and update records in a file |
+
+### 06 — TaskMaster
+
+Interactive console task manager with JSON persistence and Unicode table display.
+
+| File | Content |
+|---|---|
+| `Task.cs` | Task model: `Id`, `Description`, `Completed`, `CreatedAt`, `ModifiedAt`, `Deleted` |
+| `FileActions.cs` | Generic `FileActions<T>`: serialize/deserialize any list to/from a JSON file |
+| `Queries.cs` | CRUD operations: list, add, complete, edit, soft-delete, filter by state or keyword |
+| `MainTask.cs` | Interactive menu using a switch expression that returns and invokes `Action` delegates |
+| `task.json` | Local JSON database |
+
+---
 
 ## How to Run
 
