@@ -1,0 +1,1 @@
+Esto sobreescribe todo el archivo de una sola vez.

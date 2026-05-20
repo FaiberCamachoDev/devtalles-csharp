@@ -17,7 +17,10 @@
        //AdvancedLinq.Program.AdvancedLINQ();
        //SalesAnalysis();
        // FileExample();
-       DirectoryExample();
+       // DirectoryExample();
+       // PathExample();
+       // WriterFileExample();
+       ManageJsonFile();
     }
 }
 

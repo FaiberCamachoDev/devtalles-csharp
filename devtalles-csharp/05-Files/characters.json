@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "Peter Parker",
+    "Alias": "Spider-Man",
+    "Team": "Avengers"
+  },
+  {
+    "Id": 2,
+    "Name": "Tony Stark",
+    "Alias": "Iron Man",
+    "Team": "Avengers"
+  },
+  {
+    "Id": 3,
+    "Name": "Steve Rogers",
+    "Alias": "Capit\u00E1n Am\u00E9rica",
+    "Team": "Avengers"
+  },
+  {
+    "Id": 4,
+    "Name": "Bruce Banner",
+    "Alias": "Hulk",
+    "Team": "S.H.I.E.L.D"
+  }
+]
