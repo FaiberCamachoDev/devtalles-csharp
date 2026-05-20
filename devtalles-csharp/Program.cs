@@ -12,7 +12,10 @@
        //Methods();
        //Inheritante();
        //ShowEmpoyeesInformation();
-       Collections();
+       //Collections();
+       // Linq();
+       //AdvancedLinq.Program.AdvancedLINQ();
+       SalesAnalysis();
     }
 }
 
